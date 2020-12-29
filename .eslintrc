@@ -1,0 +1,38 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["standard", "standard-react", "prettier"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "plugins": ["react", "react-hooks"],
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+  },
+  "rules": {
+    "semi": ["error", "never"],
+    "semi-style": ["error", "first"],
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "comma-dangle": ["error", "always-multiline"],
+    "dot-notation": [
+      "warn",
+      { "allowPattern": "^([a-z]+(_[a-z]+)+|[A-Z].*)$" }
+    ],
+    "one-var": ["error", "never"],
+    "one-var-declaration-per-line": ["error", "always"],
+    "space-before-function-paren": "off",
+    "react/jsx-boolean-value": "off",
+    "react/jsx-handler-names": "off",
+    "react/prop-types": "off",
+    "react/no-did-update-set-state": "off",
+    "react/jsx-curly-newline": "off",
+    "no-return-assign": "off",
+    "arrow-parens": ["error", "always"],
+    "handle-callback-err": "off",
+    "lines-between-class-members": ["error", "always"],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error"
+  }
+}
